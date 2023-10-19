@@ -1,0 +1,21 @@
+youtube: https://www.youtube.com/watch?v=mPPhcU7oWDU&t=20634s
+
+Services we are going to build
+
+1. Product Service - Create and view products, acts as product Catalog.
+2. Order Service - can order products
+3. Inventory service - can check if prodduct is in stock or not
+4. Notification Service - can send notifications, after order is placed.
+
+Order service, investory service and notification service are going to interact with each other.
+Synchronous and asynschronous caommunication.
+
+
+- IDEIA PRINCIPAL DE DTOS:
+
+	A ideia é receber nos enpoints DTOS e retornar a resposta DTOS também, isso porque fica mais fácil a manipulacao dos dados e nossa classe model no banco deve permanecer intocada. Pode existir situacoes que adicionar novos atributos no nosso model, e nao queremos nos preocupar com isso afetando a resposta das requisicoes, por isso a separacao de model e dto como resposta.
+
+
+- Criar testes:
+
+	Para evitar ter que fazer teste manual dos endpoints na mao via postman, podemos ter testes automatizados que faz isso para nós.gi
